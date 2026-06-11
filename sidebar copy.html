@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Home Page </title>
+
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+
+    body{
+        margin:0;
+        height:100vh;
+
+        background:
+        linear-gradient(
+            rgba(0,0,0,0.7),
+            rgba(0,0,0,0.7)
+        ),
+        url('bg3.jpg');
+
+        background-size: cover;
+
+        overflow-x: hidden;
+    }
+
+        .profile{
+        text-align:center;
+        padding:20px;
+    }
+
+    .profile-pic{
+        width:120px;
+        height:120px;
+
+        border-radius:50%;
+
+        border:3px solid white;
+
+        object-fit:cover;
+    }
+
+    body, h1, h2 {
+        font-family: "Orbitron", sans-serif;
+        color: white;
+    }
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+    }
+
+    li {
+        margin: 5px 0;
+    }
+
+    li a {
+        font-family: "Orbitron", sans-serif;
+        text-decoration: none;
+        display: block;
+        padding: 15px;
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+
+        color: white;
+        font-size: 18px;
+        font-weight: 600;
+        letter-spacing: 1px;
+    }
+
+    li a:hover:not(.active) {
+        background: rgba(138,207,240,0.8);
+        color:black;
+        box-shadow: 0 0px 15px rgba(138, 207, 240, 0.8);
+        border-left: 5px solid white;
+    }
+
+    #greeting {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: #ffffff;
+    }
+
+    #clock {
+        font-size: 36px;
+        font-weight: bold;
+        color: white;
+    }  
+
+    .clock-container {
+        width: 200px;
+        margin: 20px auto;
+        text-align: center;
+        padding: 25px;
+
+        background: rgba(255, 255, 255, 0.15);
+        backdrop-filter: blur(10px);
+
+        border-radius: 20px;
+        border: 1px solid rgba(255,255,255,0.3);
+
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    .dropdown{
+        position:relative;
+    }
+
+    .submenu{
+        display: none;
+        position: static;
+        margin-left: 20px;
+        top: 0;
+        left: 100%;
+        min-width: 180px;
+        background:rgba(0,0,0,0.95);
+        border-radius: 10px;
+        padding: 0;
+        z-index: 100;
+        border-left: 3px solid #8accf0;
+        box-shadow: 0 0px 15px rgba(138,207,240,0.5);
+    }
+
+    .dropdown:hover .submenu{
+        display:block;
+    }
+
+    .submenu li{
+        width:100%;
+        list-style:none;
+    }
+
+    .submenu li a{
+        padding:12px;
+        text-align:left;
+        display:block;
+        background: #8accf0;
+        color:black;
+        padding-left:20px;
+    }
+
+    .music-player{
+        width:80%;
+        margin:20px auto;
+        padding:25px;
+        text-align:center;
+        background:rgba(255,255,255,0.15);
+        border-radius:15px;
+        backdrop-filter:blur(10px);
+        border:1px solid rgba(255,255,255,0.3);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+    select{
+        width:90%;
+        padding:5px;
+        margin-top:10px;
+        border-radius:10px;
+        border:none;
+        background:rgba(255,255,255,0.8);
+        font-family: "Orbitron", sans-serif;
+    }
+
+    audio{
+        width:90%;
+        outline:none;
+    }
+
+</style>
+</head>
+<body>
+
+    <div class="profile">
+        <img src="pfp.jpg" class="profile-pic">
+        <h2>Faris Irfan</h2>
+    </div>
+
+    <div class="clock-container">
+        <div id="greeting"></div>
+        <div id="clock"></div>
+    </div>
+
+    <hr>
+
+    <ul>
+        <li><a style="color: white;" href="home.html" target="fr">Home</a></li>
+        <li><a style="color: white;" href="about.html" target="fr">About</a></li>
+        <li><a style="color: white;" href="achievements.html" target="fr">Achievements</a></li>
+        <li class="dropdown">
+            <a style="color: white;" href="#">More</a>
+            <ul class="submenu">
+                <li><a style="color: white;" href="experiences.html" target="fr">Experiences</a></li>
+                <li><a style="color: white;" href="interests.html" target="fr">Interests</a></li>
+                <li><a style="color: white;" href="gallery.html" target="fr">Gallery</a></li>
+            </ul>
+        </li>
+        <li><a style="color: white;" href="contact.html" target="fr">Contact</a></li>
+    </ul>
+    <hr>
+
+    <div class="music-player">
+
+        <h3>🎵 Music Corner</h3>
+
+        <audio id="player" controls loop>
+            <source src="song1.mp3">
+        </audio>
+
+        <br><br>
+
+        <select onchange="changeSong(this.value)">
+            <option value="song1.mp3">Song 1</option>
+            <option value="song2.mp3">Song 2</option>
+        </select>
+    </div>
+
+    <script>
+        function updateClock() {
+            const now = new Date();
+            let hour = now.getHours();
+
+            let greeting;
+
+            if(hour < 12)
+                greeting = "Good Morning!";
+            else if(hour < 18)
+                greeting = "Good Afternoon!";
+            else
+                greeting = "Good Evening!";
+
+            document.getElementById("greeting").innerHTML = greeting;
+
+            document.getElementById("clock").innerHTML =
+                now.toLocaleTimeString();
+        }
+
+        setInterval(updateClock, 1000);
+        updateClock();
+
+        function changeSong(song){
+
+            const player =
+            document.getElementById("player");
+
+            player.src = song;
+
+            player.play();
+        }
+    </script>
+
+</body>
+</html>

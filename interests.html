@@ -1,0 +1,204 @@
+<<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>My Interests</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <style>
+        
+        body, h1, h3{
+        font-family: "Poppins", sans-serif;
+        color: white;
+        }
+
+        h2 {
+            font-family: "Poppins", sans-serif;
+            color: white;
+            text-shadow:0 0 20px rgba(255,255,255,0.4);
+            -webkit-text-stroke: 2px rgba(0,0,0,0.4);
+        }
+        
+        body {
+            background-image: linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.55)
+            ), url('bg2.jpg');
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            margin: 0;
+            padding: 0;
+         }
+
+         footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0,0,0,0.8);
+            color: white;
+            margin-top: 50px;
+        }
+
+        .banner{
+            width: 100%;
+            max-width: 800px;
+            display: block;
+            margin: auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+        }
+
+        .interest-img{
+            width:180px;
+            height:130px;
+            object-fit:cover;
+            border-radius:10px;
+            margin:5px;
+            transition:0.3s ease;
+            position:relative;
+            cursor: pointer;
+        }
+
+        .interest-img:hover{
+            transform:scale(1.8);
+            z-index:9999;
+            position:relative;
+            border:3px solid white;
+            box-shadow:0 0 30px rgba(255,255,255,0.5);
+        }
+
+        table{
+            width:100%;
+            border-collapse:collapse;
+            margin-top:20px;
+            background:rgba(255,255,255,.1);
+        }
+
+        th{
+            background:#003bba;
+            color:white;
+            padding:15px;
+        }
+
+        td{
+            padding:15px;
+            border-bottom:1px solid rgba(255,255,255,.2);
+        }
+
+        .video-container{
+            text-align:center;
+            margin-top:20px;
+        }
+
+        .video-container video{
+            width:80%;
+            max-width:700px;
+            border-radius:15px;
+            box-shadow:0 5px 20px rgba(0,0,0,.4);
+        }
+
+        </style>
+    </head>
+    <body>
+        <div class="content" style="width:80%; max-width:900px; margin:30px auto; padding:25px; background:rgba(255,255,255,.12); backdrop-filter:blur(8px); border-radius:15px; box-shadow:0 5px 15px rgba(0,0,0,.3);">
+            <h1>My Interests</h1>
+            <h1>" Game + Anime "</h1>
+            <p>These two subjects does not separate in my case. As I found anime to be most enjoyable for me, it somehow affected my preferences in games.</p>
+
+            <hr>
+
+            <h2>Anime</h2>
+
+            <img src="bg3.jpg" class="banner">
+
+            <h2>My Top 3 Anime</h2>
+
+            <table>
+            <tr>
+                <th>Anime</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><img src="sao.jpg" class="interest-img"></td>
+                <td>
+                    <h3>Sword Art Online</h3>
+                    <p>Sword Art Online is one of my favourite anime because it combines virtual reality technology, action, and adventure. The concept of living inside a game world strongly influenced my interest in gaming and technology.</p>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="snafu.jpg" class="interest-img"></td>
+                <td>
+                    <h3>My Teen Romantic Comedy SNAFU</h3>
+                    <p>My Teen Romantic Comedy SNAFU is an anime that stands out because of its realistic portrayal of friendships, relationships, and personal growth. I enjoy the deep conversations and the unique perspective of the main character, Hikigaya Hachiman. The series teaches valuable lessons about understanding people and overcoming personal struggles, making it both entertaining and meaningful.</p>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="your.jpg" class="interest-img"></td>
+                <td>
+                    <h3>Your Name</h3>
+                    <p>Your Name is one of the most beautiful anime movies I have ever watched. The stunning animation, emotional storyline, and memorable soundtrack create an unforgettable experience. I particularly enjoy how the film combines romance, fantasy, and mystery while delivering a powerful message about fate, connection, and appreciating the people around us.</p>
+                </td>
+            </tr>
+            </table>
+
+            <h2>Favorites anime trailer</h2>
+
+            <div class="video-container">
+                <video width="560" controls>
+                    <source src="sao.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <hr>
+
+            <h2>Games</h2>
+
+            <img src="game.jpg" class="banner">
+
+            <h2>My Top 3 Games</h2>
+
+            <table>
+            <tr>
+                <th>Game</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><img src="wuwa.jpg" class="interest-img"></td>
+                <td>
+                    <h3>Wuthering Waves</h3>
+                    <p>Wuthering Waves is currently one of my favourite games because of its fast-paced combat system, beautiful open world, and engaging character designs. I enjoy exploring the game's environment and mastering different character abilities. The anime-inspired art style and action-oriented gameplay make it a highly enjoyable experience for me.</p>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="persona.jpg" class="interest-img"></td>
+                <td>
+                    <h3>Persona series</h3>
+                    <p>The Persona series is one of my favourite role-playing game franchises because of its excellent storytelling, memorable characters, and unique blend of daily life simulation and dungeon exploration. I enjoy how the games allow players to build relationships with characters while uncovering deeper themes about society, identity, and personal growth.</p>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="trails.jpg" class="interest-img"></td>
+                <td>
+                    <h3>Trails series</h3>
+                    <p>The Trails series is a game franchise that I greatly admire for its rich world-building and interconnected storyline. Every game contributes to a larger narrative, making the experience feel immersive and rewarding. I enjoy learning about the different regions, characters, and political events within the game's universe, which creates a story that feels alive and realistic.</p>
+                </td>
+            </tr>
+            </table>
+
+            <h2>Favorites game trailer</h2>
+            <div class="video-container">
+                 <video width="560" controls>
+                    <source src="game.mp4" type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+
+        <footer style="background-color: rgb(29, 29, 29); color: #ffffff; font-style: italic;">
+        Created by Faris Irfan Bin Bawani Huzaimi for IML470 Individual Project
+    </footer>
+    </body>
+</html>

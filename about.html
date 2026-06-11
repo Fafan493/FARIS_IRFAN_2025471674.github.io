@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>About Me</title>
+
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+        <style>
+
+        body {
+            background-image: linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.55)
+            ), url('bg2.jpg');
+
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+
+            margin: 0;
+            padding: 0;
+         }
+
+        body, h1, h3, h4 {
+            font-family: "Poppins", sans-serif;
+            color: white;
+        }
+
+        h2 {
+            font-family: "Poppins", sans-serif;
+            color: white;
+            text-shadow:0 0 20px rgba(255,255,255,0.4);
+            -webkit-text-stroke: 2px rgba(0,0,0,0.4);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0,0,0,0.8);
+            color: white;
+            margin-top: 50px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .family-photo{
+            width: 500px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+        }
+
+        .card{
+            width:80%;
+            max-width:900px;
+            margin:30px auto;
+            padding:25px;
+            background:rgba(255,255,255,.12);
+            backdrop-filter:blur(8px);
+            border-radius:15px;
+            box-shadow:0 5px 15px rgba(0,0,0,.3);
+        }
+
+        .hobby-container{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+        }
+
+        .hobby-box{
+
+            width:250px;
+            height:180px;
+
+            border-radius:15px;
+
+            display:flex;
+            align-items:end;
+            justify-content:center;
+
+            color:white;
+
+            font-weight:bold;
+
+            transition:0.3s;
+
+            background-size:cover;
+            background-position:center;
+        }
+
+        .anime{
+            background-image:
+            linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.7)),
+            url('anime.jpg');
+        }
+
+        .gaming{
+            background-image:
+            linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.7)),
+            url('gaming.jpg');
+        }       
+
+        .music{
+            background-image:
+            linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.7)),
+            url('music.png');
+        }
+
+        .bowling{
+            background-image:
+            linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.7)),
+            url('bowling.jpeg');
+        }
+
+        .hobby-box:hover{
+            transform:scale(1.05);
+        }
+
+        .school-photo{
+            width:100%;
+            max-width:500px;
+            border-radius:15px;
+            margin-top:15px;
+            transition:.3s;
+        }
+
+        .school-photo:hover{
+            transform:scale(1.03);
+        }
+
+        </style>
+    </head>
+
+    <body style="background-color:#8acff0;">
+        <div class="hero">
+
+        <h1>About Me</h1>
+        
+        <img src="family.jpg" class="family-photo">
+        </div>
+
+        <div class="card">
+        <h2>PERSONAL INFORMATION</h2>
+        <p><strong>Name:</strong> Faris Irfan Bin Bawani Huzaimi</p>
+        <p><strong>Age:</strong> 23 years old</p>
+        <p><strong>Course:</strong> Bachelor of Information Science (Hons) Library Management</p>
+        <p><strong>University:</strong> Universiti Teknologi MARA (UiTM) Merbok</p>
+        <p><strong>Hobbies:</strong></p>
+
+        <div class="hobby-container">
+            <div class="hobby-box gaming">
+                <h3>Gaming</h3>
+            </div>
+            <div class="hobby-box anime">
+                <h3>Animes</h3>
+            </div>
+            <div class="hobby-box music">
+                <h3>Music</h3>
+            </div>
+            <div class="hobby-box bowling">
+                <h3>Bowling</h3>
+            </div>
+        </div>
+
+        <p><strong>Favorite Food:</strong> Roti Canai and any kind of food with chicken.</p>
+        <p><strong>Favorite Color:</strong> Blue and Black.</p>
+        <p><strong>Siblings:</strong> I have two younger sisters.</p>
+        </div>
+
+        <hr>
+        
+        <div class="card">
+
+        <p><h2>ACADEMIC BACKGROUND</h2></p>
+        <ul>
+            <li><h4>Primary School:<a href="https://www.facebook.com/sktansrighazalijawi/?locale=ms_MY" target="_blank"> Sekolah Kebangsaan Tan Sri Ghazali Jawi</a>
+                <p><img src="sk.jpg" class="school-photo"></p>
+            </h4></li>
+            <li><h4>Secondary School:<a href="http://gerik.mrsm.edu.my/" target="_blank"> Maktab Rendah Sains MARA Gerik</a>
+                <p><img src="mrsm.jpg" class="school-photo"></p>
+            </h4></li>
+            <li><h4>Diploma: <a href="https://perak.uitm.edu.my/index.php/en/" target="_blank"> Universiti Teknologi MARA (UiTM) Tapah</a>
+                <p><img src="tapah.jpg" class="school-photo"></p>
+            </h4></li>
+            <li><h4>Degree: <a href="https://kedah.uitm.edu.my/" target="_blank"> Universiti Teknologi MARA (UiTM) Merbok</a>
+                <p><img src="merbok.jpg" class="school-photo"></p>
+            </h4></li>
+        </ul>
+    </body>
+    <footer style="background-color: rgb(29, 29, 29); color: #ffffff; font-style: italic;">
+        Created by Faris Irfan Bin Bawani Huzaimi for IML470 Individual Project
+    </footer>
