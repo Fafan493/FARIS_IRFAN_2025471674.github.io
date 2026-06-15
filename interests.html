@@ -57,17 +57,19 @@
             object-fit:cover;
             border-radius:10px;
             margin:5px;
-            transition:0.3s ease;
-            position:relative;
-            cursor: pointer;
+            transition:all 0.4s ease;
+            cursor:pointer;
+            background:white;
         }
 
         .interest-img:hover{
-            transform:scale(1.8);
+            width:300px;
+            height:200px;
+            object-fit:contain;
+            border:3px solid rgb(0, 0, 0);
+            box-shadow:0 0 30px rgba(255,255,255,0.5);
             z-index:9999;
             position:relative;
-            border:3px solid white;
-            box-shadow:0 0 30px rgba(255,255,255,0.5);
         }
 
         table{
@@ -144,19 +146,26 @@
             </tr>
             </table>
 
+
             <h2>Favorites anime trailer</h2>
 
             <div class="video-container">
-                <video width="560" controls>
+                <video width="560" controls allowfullscreen>
                     <source src="sao.mp4" type="video/mp4">
                 </video>
             </div>
+            <center>
+                <a href="https://youtu.be/Jyp4u9qLD2g?si=cbR5YSeT0rSK6mtW" target="_blank">Youtube</a>
+                <h3>Sword Art Online: War of Underworld Final</h3>
+            </center>
 
             <hr>
+
 
             <h2>Games</h2>
 
             <img src="game.jpg" class="banner">
+
 
             <h2>My Top 3 Games</h2>
 
@@ -188,13 +197,17 @@
             </tr>
             </table>
 
+
             <h2>Favorites game trailer</h2>
             <div class="video-container">
-                 <video width="560" controls>
+                 <video width="560" controls allowfullscreen>
                     <source src="game.mp4" type="video/mp4">
                 </video>
             </div>
-
+            <center>
+                <a href="https://youtu.be/uYejjuRrLzw?si=dH_3y1g7eXaI_Upw" target="_blank">Youtube</a>
+                <h3>Ananta</h3>
+            </center>
         </div>
 
         <footer style="background-color: rgb(29, 29, 29); color: #ffffff; font-style: italic;">
